@@ -1,0 +1,56 @@
+# Local configuration and credentials
+config/*.local.json
+config/*.local.yaml
+config/*.local.yml
+.env
+.env.*
+!.env.example
+credentials*
+*.netrc
+.netrc
+*.pem
+*.key
+*token*
+*secret*
+
+# Restricted compiled extensions
+*.so
+*.dylib
+*.dll
+
+# Python, tests, and IDEs
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.coverage
+.venv/
+venv/
+.idea/
+.vscode/
+*.swp
+
+# Logs and temporary work
+*.log
+logs/
+tmp/
+temp/
+.tmp/
+.private-audit/
+
+# Satellite/scientific data and generated products
+*.tif
+*.tiff
+*.hdf
+*.h5
+*.hdf5
+*.nc
+*.nc4
+*.grib
+*.grb
+*.vrt
+*.zarr/
+
+# Platform metadata
+.DS_Store
+Thumbs.db

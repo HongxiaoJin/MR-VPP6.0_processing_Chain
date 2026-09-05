@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "If you use this processing chain, please cite this software."
+title: "MR-VPP Version 6.0 Processing Chain"
+type: software
+authors:
+  - family-names: Jin
+    given-names: Hongxiao
+    email: expertonrs@gmail.com
+version: 6.0
+date-released: 2026-09-05
+repository-code: "https://github.com/HongxiaoJin/MR-VPP6.0_processing_Chain"
+license: MIT
