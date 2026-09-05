@@ -1,0 +1,7 @@
+numpy
+pandas
+rasterio
+netCDF4
+requests
+# GDAL's Python bindings should match the installed GDAL library; Conda is recommended.
+GDAL

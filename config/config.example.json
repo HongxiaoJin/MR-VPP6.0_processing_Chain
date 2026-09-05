@@ -1,0 +1,11 @@
+{
+  "data_root": "/path/to/mrvpp-modis-workspace",
+  "tiles": ["X00Y00"],
+  "start_year": 2000,
+  "end_year": null,
+  "workers": 2,
+  "block_rows": 240,
+  "raster_block": 840,
+  "python_executable": "/path/to/conda/env/bin/python",
+  "timesat_config": "/path/to/repository/config/timesatCfg.local.json"
+}

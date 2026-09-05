@@ -1,0 +1,16 @@
+name: mrvpp60-modis
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - gdal
+  - libgdal
+  - netcdf4
+  - numpy
+  - pandas
+  - rasterio
+  - requests
+  - pytest
+  - ruff
+  - shellcheck
+  - pip

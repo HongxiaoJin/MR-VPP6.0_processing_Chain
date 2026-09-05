@@ -1,0 +1,30 @@
+{
+  "logFile": "/path/to/workspace/logs/timesat_<startDate>_<endDate>_<now>.log",
+  "startDate": {"value": "20000101", "description": "ISO date YYYYMMDD."},
+  "endDate": {"value": "20251231", "description": "ISO date YYYYMMDD; update to the latest available input date."},
+  "inputFiletype": "tif",
+  "inppiFolder": "/path/to/workspace/PPI_QA/<tile>/PPI",
+  "inppiFilePattern": "MODIS_sbaf_<tile>.<year><doy>-ppi.tif",
+  "inqaFolder": "/path/to/workspace/PPI_QA/<tile>/QA",
+  "inqaFilePattern": "MODIS_sbaf_<tile>.<year><doy>-qa.tif",
+  "inDataFile": "",
+  "inDataset": {"value": "", "description": "NetCDF variable; unused for GeoTIFF input."},
+  "outputfolder": {"value": "/path/to/workspace/LSP/<tile>", "description": "TIMESAT output directory."},
+  "settings": {
+    "p_startcutoff": {"value": [0.25, 0.15], "description": "Start-of-season parameters."},
+    "p_low_percentile": {"value": 0.05, "description": "Base-level percentile."},
+    "p_ylu": {"value": [-1000.0, 5000.0], "description": "Minimum and maximum data limits."},
+    "tv_list": {"value": "", "description": "Optional external date list."},
+    "imwindow": {"value": [0, 0, 0, 0], "description": "Input window."},
+    "p_ignoreday": {"value": 366, "description": "Ignored leap-year day."},
+    "p_a": {"value": [[0.0, 24, 1.0], [25, 34, 0.6], [35, 253.0, 0.1]], "description": "QA ranges and weights."},
+    "p_st_timestep": {"value": 1, "description": "Fitting-data time step."},
+    "p_nodata": {"value": -9999, "description": "Output nodata value."},
+    "p_nenvi": {"value": 2, "description": "Number of envelope iterations."},
+    "p_wfactnum": {"value": 5, "description": "Adaptation-strength factor."},
+    "p_startmethod": {"value": 1, "description": "Start method: 1 individual-year amplitude percentage; 2 absolute threshold; 3 mean-amplitude percentage."},
+    "p_outputformat": {"value": 2, "description": "0 sequential; 1 YYDOY; 2 DOY with adjacent-year overflow."},
+    "p_seapar": {"value": 0.5, "description": "Small-season detection level."},
+    "p_printflag": {"value": 0, "description": "Debug option."}
+  }
+}
